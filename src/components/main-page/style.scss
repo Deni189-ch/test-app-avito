@@ -1,0 +1,63 @@
+@import "../../styles/mixin.scss";
+
+.main {
+  position: relative;
+  height: 100vh;
+  max-width: 768px;
+  padding: 15px 0;
+  margin: 0 auto;
+  padding-bottom: 56px;
+}
+
+.main__header {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 36px;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.main__setka-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main__img {
+  width: 229px;
+  height: 142px;
+  margin: 11px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0 0 10px rgb(71 136 217 / 40%);
+  }
+}
+
+.main__footer {
+  height: 56px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 20px;
+  border-top: 1px solid $TwoBg;
+}
+
+.main__footer-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.main__footer-year {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: $TwoBg;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  text-transform: uppercase;
+}

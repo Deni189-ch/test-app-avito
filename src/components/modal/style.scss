@@ -1,0 +1,107 @@
+@import "../../styles/mixin.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+.modal__wrappet {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+  height: 425px;
+  max-width: 619px;
+  margin: 0 auto;
+  margin-top: 181px;
+  padding: 30px;
+    @include adaptive(iPads) {
+      display: block;
+      height: auto;
+      width: 300px;
+      padding: 6px;
+  }
+}
+
+.modal__exit {
+  position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: rotate(45deg);
+    cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-left: 1px solid #000000;
+    height: 25px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    border-bottom: 1px solid #000000;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.madal__img {
+  width: 324px;
+  height: 205px;
+  @include adaptive(iPads) {
+    width: 285px;
+  }
+}
+
+.modal__column-left {
+  max-width: 331px;
+}
+
+.madal_btn-submit {
+  width: 100%;
+  height: 34px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: #4997D0;
+  color: white;
+  &:hover {
+    background: #3172a1;
+  }
+}
+
+.ant-input {
+  margin-top: 20px !important;
+}
+
+.modal__error-text {
+  text-align: center;
+  color: red;
+}
+
+.modal__column-right {
+  padding-left: 15px;
+  overflow: auto;
+}
+
+.madal__comments-nam {
+  color: rgba(153, 153, 153, 1);
+}
+
+.madal__comments-tex {
+  color: rgba(0, 0, 0, 1);
+  font-size: 12px;
+  margin-bottom: 5px;
+}
